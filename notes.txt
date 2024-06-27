@@ -1,0 +1,29 @@
+actions = [left, right, up, down]
+
+state = [
+    danger left, danger right, danger up, danger down
+
+    direction left, direction right, direction up, direction down,
+
+    food left, food right, food up, food down
+]
+
+NEURAL NETWORK
+
+input   hidden  output
+  12    to set     4
+
+
+next_q = q + alpha * (reward - gamma * max_q - q)
+
+
+ASK CHATGPT
+  Is this definition okay?
+  def forward(self, x):
+        return self.outputLinear(self.hiddenLinear(self.inputLinear(x)))
+  
+  why self.memory deque
+
+  explain act() function, especially no_grad etc
+  
+  and also replay (I think it is replay buffer for storing latest experiences, after each new experience it changes (new experience is inserted and to oldest is removed?))
